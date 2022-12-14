@@ -1,0 +1,486 @@
+<!-- HTML File -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Application Form</title>
+  </head>
+  <body>
+    <div id="h1-header">
+      <h1>APPLICATION FORM</h1>
+    </div>
+
+    <form method="get">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div id="personal-info">
+          <div id="personal-one">
+            <div class="label" class="gap-space">
+              <div class="gap-space">
+                <label for="fullname">Applicant's full name</label>
+              </div>
+              <div class="gap-space">
+                <label for="father-name">Father's name</label>
+              </div>
+              <div class="gap-space">
+                <label for="gender">Gender</label>
+              </div>
+              <div class="gap-space">
+                <label for="maritail-status">Marital Status</label>
+              </div>
+              <div class="gap-space">
+                <label for="handicap">Handicapped</label>
+              </div>
+              <div class="gap-space">
+                <label for="ews">EWS</label>
+              </div>
+            </div>
+
+            <div class="input" class="gap-space">
+              <div id="div-fullname" class="gap-space">
+                <select id="fullname" name="fullname">
+                  <option value="">--Select--</option>
+                  <option value="Cambodia">Cambodia</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Vietnam">Vietnam</option>
+                </select>
+                <input type="textbox" id="fullname" name="fullname" />
+              </div>
+
+              <div id="div-father-name" class="gap-space">
+                <select id="father-name" name="father-name" readonly>
+                  <option value="Mr.">Mr.</option>
+                </select>
+                <input type="textbox" id="father-name" name="father-name" />
+              </div>
+
+              <div id="div-gender" class="gap-space">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="male" value="Male" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="female" value="Female" />
+                <label for="others">Others</label>
+                <input type="radio" id="others" name="others" value="Others" />
+              </div>
+
+              <div id="div-maritial-status" class="gap-space">
+                <select id="maritail-status" name="maritail-status">
+                  <option value="">--Select--</option>
+                  <option value="Single">Single</option>
+                  <option value="Married">Married</option>
+                  <option value="Divorced">Divorced</option>
+                  <option value="Widowed">Widowed</option>
+                </select>
+              </div>
+
+              <div id="div-handicap" class="gap-space">
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="yes" value="Yes" />
+                <label for="no">No</label>
+                <input type="radio" id="no" name="no" value="No" />
+              </div>
+
+              <div id="div-ews" class="gap-space">
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="yes" value="Yes" />
+                <label for="no">No</label>
+                <input type="radio" id="no" name="no" value="No" />
+              </div>
+            </div>
+          </div>
+
+          <div id="personal-two">
+            <div class="label" class="gap-space">
+              <div id="care-of" class="gap-space">
+                <label for="care-of">Care of</label>
+              </div>
+              <div id="mother-name" class="gap-space">
+                <label for="mother-name">Mother's name</label>
+              </div>
+              <div id="dob" class="gap-space">
+                <label for="dob">Date of Birth</label>
+              </div>
+              <div class="gap-space">
+                <label for="category">Category</label>
+              </div>
+              <div id="ex-serviceman" class="gap-space">
+                <label for="ex-serviceman">Ex-Serviceman</label>
+              </div>
+              <div id="religion" class="gap-space">
+                <label for="religion">Religion</label>
+              </div>
+            </div>
+
+            <div class="input" class="gap-space">
+              <div id="div-care-of" class="gap-space">
+                <label for="parents">Parents</label>
+                <input
+                  type="radio"
+                  id="parents"
+                  name="parents"
+                  value="parents"
+                />
+                <label for="Guardian">Guardian</label>
+                <input
+                  type="radio"
+                  id="guardian"
+                  name="guardian"
+                  value="guardian"
+                />
+              </div>
+
+              <div id="div-mother-name" class="gap-space">
+                <select id="mother-name" name="mother-name" readonly>
+                  <option value="Mrs.">Mrs.</option>
+                </select>
+                <input type="textbox" id="mother-name" name="mother-name" />
+              </div>
+
+              <div id="div-dob" class="gap-space">
+                <input type="date" id="dob" name="dob" />
+              </div>
+
+              <div id="div-category" class="gap-space">
+                <select id="category" name="category">
+                  <option value="">--Select--</option>
+                  <option value="General">General</option>
+                  <option value="OBC">OBC</option>
+                  <option value="SC">SC</option>
+                  <option value="ST">ST</option>
+                </select>
+              </div>
+
+              <div id="div-ex-serviceman" class="gap-space">
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="yes" value="Yes" />
+                <label for="no">No</label>
+                <input type="radio" id="no" name="no" value="No" />
+              </div>
+
+              <div id="div-religion" class="gap-space">
+                <select id="religion" name="religion">
+                  <option value="">--Select--</option>
+                  <option value="Hindu">Hindu</option>
+                  <option value="Muslim">Muslim</option>
+                  <option value="Sikh">Sikh</option>
+                  <option value="Christian">Christian</option>
+                  <option value="Buddhist">Buddhist</option>
+                  <option value="Jain">Jain</option>
+                  <option value="Parsi">Parsi</option>
+                  <option value="Jewish">Jewish</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Details</legend>
+        <div id="contact-info">
+          <div id="contact-details-one">
+            <div class="label" class="gap-space">
+              <div class="gap-space">
+                <label for="mobile-phone">Mobile Phone</label>
+              </div>
+              <div class="gap-space">
+                <label for="address-line-1">Address Line 1</label>
+              </div>
+              <div class="gap-space">
+                <label for="city">City</label>
+              </div>
+              <div class="gap-space">
+                <label for="Pin Code">Pin Code</label>
+              </div>
+            </div>
+
+            <div class="input" class="gap-space">
+              <div class="gap-space">
+                <input type="textbox" id="mobile-phone" name="mobile-phone" />
+              </div>
+              <div class="gap-space">
+                <input
+                  type="textbox"
+                  id="address-line-1"
+                  name="address-line-1"
+                />
+              </div>
+              <div class="gap-space">
+                <input type="textbox" id="city" name="city" />
+              </div>
+              <div class="gap-space">
+                <input type="textbox" id="pin-code" name="pin-code" />
+              </div>
+            </div>
+          </div>
+          <div id="contact-details-two">
+            <div class="label gap-space">
+              <div class="gap-space">
+                <label for="email">Email</label>
+              </div>
+              <div class="gap-space">
+                <label for="address-line-2">Address Line 2</label>
+              </div>
+              <div class="gap-space">
+                <label for="state">State</label>
+              </div>
+            </div>
+
+            <div class="input gap-space">
+              <div class="gap-space">
+                <input type="textbox" id="email" name="email" />
+              </div>
+              <div class="gap-space">
+                <input
+                  type="textbox"
+                  id="address-line-2"
+                  name="address-line-2"
+                />
+              </div>
+              <div class="gap-space">
+                <select id="state" name state>
+                  <option value="">--Select--</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Qualification Details</legend>
+        <div id="qualification-info">
+          <table>
+            <tr>
+              <th class="no">Sr No.</th>
+              <th>Qualification</th>
+              <th>Board/University</th>
+              <th>Passing Year</th>
+              <th>Max Marks</th>
+              <th>Marks Obtained</th>
+              <th>Percentage</th>
+            </tr>
+
+            <tr>
+              <td class="no">1</td>
+              <td>
+                <select id="qualification" name="qualification">
+                  <option value="">--Select--</option>
+                  <option value="10th">10th</option>
+                  <option value="12th">12th</option>
+                  <option value="Graduation">Graduation</option>
+                  <option value="Post Graduation">Post Graduation</option>
+                </select>
+              </td>
+              <td><input type="text" id="board" name="board" /></td>
+              <td>
+                <input type="text" id="passing-year" name="passing-year" />
+              </td>
+              <td><input type="text" id="max-marks" name="max-marks" /></td>
+              <td>
+                <input type="text" id="marks-obtained" name="marks-obtained" />
+              </td>
+              <td><input type="text" id="percentage" name="percentage" /></td>
+            </tr>
+            <tr>
+              <td class="no">2</td>
+              <td>
+                <select id="qualification" name="qualification">
+                  <option value="">--Select--</option>
+                  <option value="10th">10th</option>
+                  <option value="12th">12th</option>
+                  <option value="Graduation">Graduation</option>
+                  <option value="Post Graduation">Post Graduation</option>
+                </select>
+              </td>
+              <td><input type="text" id="board" name="board" /></td>
+              <td>
+                <input type="text" id="passing-year" name="passing-year" />
+              </td>
+              <td><input type="text" id="max-marks" name="max-marks" /></td>
+              <td>
+                <input type="text" id="marks-obtained" name="marks-obtained" />
+              </td>
+              <td><input type="text" id="percentage" name="percentage" /></td>
+            </tr>
+            <tr>
+              <td class="no">3</td>
+              <td>
+                <select id="qualification" name="qualification">
+                  <option value="">--Select--</option>
+                  <option value="10th">10th</option>
+                  <option value="12th">12th</option>
+                  <option value="Graduation">Graduation</option>
+                  <option value="Post Graduation">Post Graduation</option>
+                </select>
+              </td>
+              <td><input type="text" id="board" name="board" /></td>
+              <td>
+                <input type="text" id="passing-year" name="passing-year" />
+              </td>
+              <td><input type="text" id="max-marks" name="max-marks" /></td>
+              <td>
+                <input type="text" id="marks-obtained" name="marks-obtained" />
+              </td>
+              <td><input type="text" id="percentage" name="percentage" /></td>
+            </tr>
+            <tr>
+              <td class="no">4</td>
+              <td>
+                <select id="qualification" name="qualification">
+                  <option value="">--Select--</option>
+                  <option value="10th">10th</option>
+                  <option value="12th">12th</option>
+                  <option value="Graduation">Graduation</option>
+                  <option value="Post Graduation">Post Graduation</option>
+                </select>
+              </td>
+              <td><input type="text" id="board" name="board" /></td>
+              <td>
+                <input type="text" id="passing-year" name="passing-year" />
+              </td>
+              <td><input type="text" id="max-marks" name="max-marks" /></td>
+              <td>
+                <input type="text" id="marks-obtained" name="marks-obtained" />
+              </td>
+              <td><input type="text" id="percentage" name="percentage" /></td>
+            </tr>
+            <tr>
+              <td class="no">5</td>
+              <td>
+                <select id="qualification" name="qualification">
+                  <option value="">--Select--</option>
+                  <option value="10th">10th</option>
+                  <option value="12th">12th</option>
+                  <option value="Graduation">Graduation</option>
+                  <option value="Post Graduation">Post Graduation</option>
+                </select>
+              </td>
+              <td><input type="text" id="board" name="board" /></td>
+              <td>
+                <input type="text" id="passing-year" name="passing-year" />
+              </td>
+              <td><input type="text" id="max-marks" name="max-marks" /></td>
+              <td>
+                <input type="text" id="marks-obtained" name="marks-obtained" />
+              </td>
+              <td><input type="text" id="percentage" name="percentage" /></td>
+            </tr>
+          </table>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Language Knowledge</legend>
+        <table>
+          <tr>
+            <th class="h-l-r-spacing">Language</th>
+            <th class="l-r-spacing">Reading</th>
+            <th class="l-r-spacing">Writing</th>
+            <th class="l-r-spacing">Speaking</th>
+          </tr>
+
+          <tr>
+            <td class="h-l-r-spacing">Hindi</td>
+            <td class="l-r-spacing">
+              <input type="checkbox" />
+            </td>
+            <td class="l-r-spacing">
+              <input type="checkbox" />
+            </td>
+            <td class="l-r-spacing">
+              <input type="checkbox" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="h-l-r-spacing">English</td>
+            <td class="l-r-spacing">
+              <input type="checkbox" />
+            </td>
+            <td class="l-r-spacing">
+              <input type="checkbox" />
+            </td>
+            <td class="l-r-spacing">
+              <input type="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td class="h-l-r-spacing">Urdu</td>
+            <td class="l-r-spacing">
+              <input type="checkbox" />
+            </td>
+            <td class="l-r-spacing">
+              <input type="checkbox" />
+            </td>
+            <td class="l-r-spacing">
+              <input type="checkbox" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Identification Details</legend>
+        <div id="identification-info">
+          <div id="identification-one">
+            <div class="label">
+              <div class="gap-space">
+                <label for="id-card-number">Aadbar Card Number</label>
+              </div>
+              <div class="gap-space">
+                <label for="photo">Upload Photo</label>
+              </div>
+            </div>
+
+            <div class="input">
+              <div class="gap-space">
+                <input type="text" id="id-card-number" name="id-card-number" />
+              </div>
+              <div class="gap-space">
+                <input type="file" id="photo" name="photo" />
+              </div>
+            </div>
+          </div>
+
+          <div id="identification-two">
+            <div class="label">
+              <div class="gap-space">
+                <label for="pan-card-number">PAN Card Number</label>
+              </div>
+              <div class="gap-space">
+                <label for="signature">Upload Signature</label>
+              </div>
+            </div>
+            <div class="input">
+              <div class="gap-space">
+                <input
+                  type="text"
+                  id="pan-card-number"
+                  name="pan-card-number"
+                />
+              </div>
+              <div class="gap-space">
+                <input type="file" id="signature" name="signature" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <div id="btn">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Back" />
+      </div>
+    </form>
+  </body>
+</html>

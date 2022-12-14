@@ -1,0 +1,110 @@
+/* CSS File */
+
+#h1-header{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.gap-space {
+    margin: 5px;
+}
+
+#personal-info,
+#contact-info,
+#identification-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#personal-one {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+
+#personal-two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    align-items: center;
+}
+
+#contact-details-one {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+}
+
+#contact-details-two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    align-items: center;
+}
+
+#identification-one {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+
+#identification-two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    clear: both;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    border-spacing: 15px;
+}
+
+td,
+th {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.no {
+    padding-left: 0px;
+}
+
+.l-r-spacing {
+    padding-left: 20vw;
+}
+
+.h-l-r-spacing {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+#btn input{
+    margin: 10px 5px;
+}
